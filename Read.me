@@ -1,0 +1,74 @@
+# Project Documentation for Fractal Analysis of Nodes 5 and 32
+
+## Overview
+This repository contains the code and analysis for the fractal and hierarchical properties of Nodes 5 and 32 in a generative tree structure. The research applies multiple computational techniques, including log-log scaling for fractal dimension estimation, FFT power spectrum analysis, and wavelet decomposition.
+
+## Repository Structure
+```
+├── src/		   # Contains Python scripts for analysis
+│   ├── fractal_dimension.py	# Log-log scaling computation
+│   ├── fft_analysis.py		   # Power spectrum analysis
+│   ├── wavelet_analysis.py	   # Multi-scale wavelet decomposition
+│   ├── data_processing.py	   # Data normalization and transformation
+│   ├── visualization.py		   # Plotting functions for results
+├── data/		   # Placeholder for datasets used in analysis
+│   ├── node5_data.csv		   # Node 5 dataset
+│   ├── node32_data.csv		   # Node 32 dataset
+├── results/		   # Stores generated figures and logs
+├── README.md		   # Documentation and project details
+├── requirements.txt	   # Python dependencies
+└── LICENSE		   # Open-source licensing
+```
+
+## Installation
+To run this analysis, ensure you have Python 3.8+ installed. Install dependencies using:
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Analysis
+### 1. Compute Fractal Dimension
+```bash
+python src/fractal_dimension.py
+```
+Outputs log-log plots and estimated fractal dimensions for Nodes 5 and 32.
+
+### 2. Perform FFT Power Spectrum Analysis
+```bash
+python src/fft_analysis.py
+```
+Outputs power-law decay confirmation through frequency analysis.
+
+### 3. Conduct Wavelet Analysis
+```bash
+python src/wavelet_analysis.py
+```
+Decomposes the dataset into multi-scale frequency components.
+
+## Data Processing and Normalization
+Before running any analysis, ensure that datasets are properly normalized. This is handled by:
+```bash
+python src/data_processing.py
+```
+
+## Visualization
+To generate and save plots of results:
+```bash
+python src/visualization.py
+```
+
+## Expected Outputs
+1. **Fractal Dimension Analysis**:
+   - Log-log plots demonstrating power-law behavior.
+   - Fractal dimension estimates with regression statistics.
+2. **FFT Analysis**:
+   - Power spectrum decay confirming long-range correlations.
+3. **Wavelet Analysis**:
+   - Coefficients revealing hierarchical and self-similar structures.
+
+## Contributing
+Contributions are welcome! Please submit issues and pull requests to enhance the analysis.
+
+## License
+This project is licensed under the MIT License.
+
